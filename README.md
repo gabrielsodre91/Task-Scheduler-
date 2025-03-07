@@ -13,7 +13,7 @@ A distributed task scheduling system that allows users to schedule both one-time
 
 ## Technologies Used
 
-- **Frontend**: React, TypeScript, Tailwind CSS
+- **Frontend**: React, TypeScript, Bulma CSS
 - **Backend**: Node.js, Express, TypeScript
 - **Database**: SQLite
 - **Containerization**: Docker
