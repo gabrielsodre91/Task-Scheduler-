@@ -1,0 +1,21 @@
+services:
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+    environment:
+      - REACT_APP_API_URL=http://localhost:3003
+
+  server:
+    build: ./server
+    ports:
+      - "3003:3003"
+    volumes:
+      - ./server/data:/app/data
+      - ./server/src/database.sqlite:/app/dist/database.sqlite
+
+networks:
+  default:
+    driver: bridge
